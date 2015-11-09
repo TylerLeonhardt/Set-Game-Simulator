@@ -80,11 +80,11 @@ $ ->
 
   window.deck = JSON.parse $("#cards")[0].dataset.deck
   window.flipped_up_cards = window.deck.splice(0,12)
-  toggled_on = false
-
+  toggled_on = $("#autoplay")[0].checked
+  autoplay()
   generate_html(window.flipped_up_cards)
 
   $("#autoplay").change (() ->
-    toggled_on = !toggled_on
+    toggled_on = this.checked
     autoplay()
   )

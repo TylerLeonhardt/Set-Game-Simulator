@@ -52,7 +52,13 @@ There's a couple things that I did differently in this challenge. For starters, 
 
 Secondly, for styling, I used Google's [Material Design Light](http://getmdl.io). It's a new 'bootstrap-like' framework that allows you to use some pretty handy tools like the 'grid', and really awesome looking inputs and nav bars and such.
 
-If there are any other clarifications you would like, please don't hesitate to react out.
+If there are any other clarifications you would like, please don't hesitate to react out. I took a very different approach to the challenge.
+
+### Prerequisites
+
+I'm currently using Ruby version: `ruby 2.0.0p645`
+
+You'll also need to install the Rails gem which you can do [here](http://rubyonrails.org/download/)!
 
 ### Setup
 
@@ -68,6 +74,8 @@ Since I used Ruby on Rails for this project, we need to do a couple of steps to 
 You are now ready to open up a browser and head over to `localhost:3000`!
 
 ### Usage
+
+![WOW!](ScreenShot.png)
 
 The UI allows you to do a few things. For starters, you are presented with 12 cards, a scoreboard, a 'next phase' floating action button, and an 'Autoplay' toggle switch.
 
