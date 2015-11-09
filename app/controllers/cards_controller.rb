@@ -60,6 +60,9 @@ class CardsController < ApplicationController
     # Uses the built in "combination" method that tries every combination of 3 cards to find a set
     # If it fails to find a set, it returns an empty array
     def find_a_set(cards)
+      if cards.length < 3
+        return []
+      end
       combinations = cards.combination(3).to_a
       for c in combinations
         if is_set(c)

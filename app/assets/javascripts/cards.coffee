@@ -16,21 +16,21 @@ $ ->
 
   # determines who had the most points
   get_winner = () ->
-    scores = $(".player-score").text().split("")
 
-    max = scores[0]
+    scores = $(".player-score")
+    max = scores[0].textContent
 
     i = 1
     while i < scores.length
-      if scores[i] > max
-        max = scores[i]
+      if Number.parseInt(scores[i].textContent) > Number.parseInt(max)
+        max = scores[i].textContent
       i++
 
     winners = []
     i = 0
     while i < scores.length
-      if scores[i] == max
-        winners.push $(".player-score").parent().find(".player-name")[i].innerHTML.trim()
+      if scores[i].textContent == max
+        winners.push scores.parent().find(".player-name")[i].innerHTML.trim()
       i++
 
     winners.toString()
