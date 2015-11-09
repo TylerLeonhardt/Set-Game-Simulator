@@ -1,0 +1,13 @@
+// Place all the styles related to the Cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.fab-static {
+  position: fixed;
+  bottom: 43px;
+  right: 48%;
+  z-index: 100;
+}
+
+.mdl-layout__header-row {
+      background-color: dodgerblue;
+}

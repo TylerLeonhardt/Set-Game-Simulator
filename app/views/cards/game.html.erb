@@ -1,0 +1,68 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">The Amazing Set Game Simulator!</span>
+      <div class="mdl-layout-spacer"></div>
+      <div>
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="autoplay">
+          <input type="checkbox" id="autoplay" class="mdl-switch__input" unchecked>
+          <span class="mdl-switch__label">Autoplay</span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="mdl-grid mdl-shadow--4dp">
+        <h5 class="mdl-cell mdl-cell--12-col center-text">Scoreboard</h5>
+        <div class="mdl-cell mdl-cell--12-col mdl-grid center-text">
+          <div class="mdl-cell mdl-cell--3-col">
+            <div class="player-name">
+              Player 1
+            </div>
+            <br/>
+            <div class="player-score">
+              0
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col">
+            <div class="player-name">
+              Player 2
+            </div>
+            <br/>
+            <div class="player-score">
+              0
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col">
+            <div class="player-name">
+              Player 3
+            </div>
+            <br/>
+            <div class="player-score">
+              0
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col">
+            <div class="player-name">
+              Player 4
+            </div>
+            <br/>
+            <div class="player-score">
+              0
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-grid" data-deck="<%= @cards %>" id="cards">
+      </div>
+    </div>
+    <button id="next-phase" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fab-static" onclick="window.next_phase()">
+      <i class="material-icons">arrow_forward</i>
+    </button>
+    <div class="mdl-tooltip" for="next-phase">
+      Next Phase
+    </div>
+  </main>
+</div>
