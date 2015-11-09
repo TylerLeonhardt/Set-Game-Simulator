@@ -31,6 +31,7 @@ class CardsController < ApplicationController
       end
     end
 
+    # METHOD 1
     # Checks if 3 cards make up a set
     def is_set(list)
       cards = list.map do |c|
@@ -55,6 +56,7 @@ class CardsController < ApplicationController
       params
     end
 
+    # METHOD 2
     # Uses the built in "combination" method that tries every combination of 3 cards to find a set
     # If it fails to find a set, it returns an empty array
     def find_a_set(cards)
